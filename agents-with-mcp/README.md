@@ -127,7 +127,6 @@ agentic-ai-lab/
 │   └── README.md               # This file
 ├── agents/                      # Other agent examples
 ├── chat-rag/                    # RAG examples
-├── sk-and-autogen/              # Semantic Kernel and AutoGen framework examples
 └── ...                         # Other lab modules
 ```
 

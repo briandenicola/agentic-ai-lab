@@ -24,12 +24,11 @@ This comprehensive laboratory transforms you from an AI enthusiast into an Azure
 4. Model Context Protocol (MCP) with Agents
 5. AI Red Teaming & Security Testing
 6. Agent Framework – Advanced Agent Development
-7. Frameworks – AutoGen, Semantic Kernel
-8. Observability & Evaluation
-9. AI Language Services with Low-Code Workflows
-10. AI Vision with Low-Code Solutions
-11. Content Understanding & Document Classification
-12. Responsible AI & Content Safety
+7. Observability & Evaluation
+8. AI Language Services with Low-Code Workflows
+9. AI Vision with Low-Code Solutions
+10. Content Understanding & Document Classification
+11. Responsible AI & Content Safety
 
 
 > **🎓 Laboratory Format**: One day intensive hands-on experience  
@@ -48,8 +47,7 @@ agentic-ai-lab/
 ├── 🔌 agents-with-mcp/        # Model Context Protocol (MCP) integration
 ├── 🔴 ai-red-teaming-agent/   # AI Red Teaming and Security Testing
 ├── 🤖⚙️ agent-framework/        # Microsoft Agent Framework for advanced agent development
-├── 🏗️ sk-and-autogen/          # Semantic Kernel and AutoGen frameworks
-├── 📊 observalibility/         # Monitoring, evaluation, and quality assurance
+├── 📊 observability-and-evaluations/         # Monitoring, evaluation, and quality assurance
 ├── 🗣️ ai-language/             # AI Language Services with Logic Apps low-code workflows
 ├── 👁️ ai-vision/               # AI Vision Services with low-code solutions
 ├── 📄 content-understanding/   # Document classification and content extraction
@@ -87,7 +85,7 @@ pip install -r requirements.txt
 
 ### Step 4: Azure AI Foundry Setup
 
-1. **Create Azure AI Foundry Project**
+1. **Create Azure AI Foundry Resource and Project**
    
    To create an AI Foundry resource in the Azure portal follow these instructions:
 
@@ -95,7 +93,7 @@ pip install -r requirements.txt
 
    - On the Create page, provide the following information:
 
-   <img src="images/create-foundry-resource.png" width="75%"/>
+   <img src="images/ai-foundry-deployment.png" width="75%"/>
 
    | Project details | Description |
    |----------------|-------------|
@@ -117,7 +115,7 @@ pip install -r requirements.txt
    - On the left Nav Menu of the foundry portal go to Models+endpoints
    - Click Deploy a model button-->Deploy base model
       - Search for the models in the table above , select a model, click confirm and Deploy and connect
-       <img src="images/DeployModels.png" width="75%"/>
+       <img src="images/deploy-models.png" width="75%"/>
 
 3. **Configure an Azure Search Service**
    - Create an Azure AI Search resource in Azure
@@ -256,8 +254,8 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 #### 📊 Observability (`observability/`)
 | Notebook | Description |
 |----------|-------------|
-| 👁️ [Agent observability](agent-framework/observability/1-azure_ai_agent_observability.ipynb) | Trace LLM calls, tool executions, token usage with Application Insights |
-| 💬 [Chat Client observability](agent-framework/observability/2-azure_ai_chat_client_with_observability.ipynb) | Monitor Azure AI chat clients with multiple tools |
+| 👁️ [Agent Observability](agent-framework/observability/1-azure_ai_agent_observability.ipynb) | Trace LLM calls, tool executions, token usage with Application Insights |
+| 💬 [Chat Client Observability](agent-framework/observability/2-azure_ai_chat_client_with_observability.ipynb) | Monitor Azure AI chat clients with multiple tools |
 
 #### 🎨 Development UI (`devui/`)
 | Implementation | Description |
@@ -265,31 +263,22 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 | 🌐 [In-Memory Mode](agent-framework/devui/in_memory_mode.py) | Quick-start web interface for testing agents |
 | 📁 [Sample Agents](agent-framework/devui/) | Pre-built examples: Foundry agent, weather agent, spam workflow, fanout workflow |
 
-### 🏗️ Phase 7: Semantic Kernel + AutoGen
-**Location:** `sk-and-autogen/`
+### 📊 Phase 7: Quality & Operations
+**Location:** `observability-and-evaluations/`
 
 | Notebook | Description |
 |----------|-------------|
-| 🔧 [RAG + Semantic Kernel + Agents](sk-and-autogen/1-rag-sk-agents-aisearch.ipynb) | Microsoft's orchestration framework |
-| 🤖 [AutoGen Multi-Agent RAG](sk-and-autogen/2-autogen-multi-agent-rag.ipynb) | Automated agent generation |
-| ❤️ [AutoGen Personalized Analytics](sk-and-autogen/3-autogen-personalized-heart-rate.ipynb) | Health domain specialization |
+| 👁️ [Observability](observability-and-evaluations/1-Observability.ipynb) | Monitoring and telemetry |
+| 📈 [Evaluation](observability-and-evaluations/2-evaluation.ipynb) | Quality assessment and benchmarking |
 
-### 📊 Phase 8: Quality & Operations
-**Location:** `observalibility/`
-
-| Notebook | Description |
-|----------|-------------|
-| 👁️ [Observability](observalibility/1-Observability.ipynb) | Monitoring and telemetry |
-| 📈 [Evaluation](observalibility/2-evaluation.ipynb) | Quality assessment and benchmarking |
-
-### 🗣️ Phase 9: AI Language Services with Low-Code Workflows
+### 🗣️ Phase 8: AI Language Services with Low-Code Workflows
 **Location:** `ai-language/`
 
 | Implementation | Description |
 |----------|-------------|
 | 🔤 [AI Language Service Lab](ai-language/README.md) | Low-code Logic Apps for PII removal, language detection, and translation. Build workflow solutions for processing multilingual customer feedback with privacy compliance and centralized analytics. |
 
-### 👁️ Phase 10: AI Vision Services with Low-Code Solutions  
+### 👁️ Phase 9: AI Vision Services with Low-Code Solutions  
 **Location:** `ai-vision/`
 
 | Implementation | Description |
@@ -297,7 +286,7 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 | 👀 [AI Vision Lab Guide](ai-vision/README.md) | Azure AI Vision low-code exercises including OCR, face detection, image analysis, and video indexing using Vision Studio |
 | 📓 [AI Vision Services Notebook](ai-vision/LabFiles/AI_vision_services_lab.ipynb) | Hands-on Jupyter notebook for computer vision capabilities |
 
-### 📄 Phase 11: Content Understanding & Document Classification
+### 📄 Phase 10: Content Understanding & Document Classification
 **Location:** `content-understanding/`
 
 | Implementation | Description |
@@ -307,7 +296,7 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 | 🐍 [Content Understanding Client](content-understanding/content_understanding_client.py) | Python client implementation for Azure AI Content Understanding API |
 | 📋 [Sample Data](content-understanding/Data/) | Sample PDF documents for testing classification and extraction workflows |
 
-### 🛡️ Phase 12: Responsible AI & Content Safety
+### 🛡️ Phase 11: Responsible AI & Content Safety
 **Location:** `responsible-ai/`
 
 | Implementation | Description |

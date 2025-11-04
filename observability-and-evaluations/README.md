@@ -1,6 +1,6 @@
-# AI Evaluation with Azure AI Foundry
+# Observability and Evaluations with Azure AI Foundry
 
-This directory contains notebooks for evaluating AI models and applications using Azure AI Foundry's evaluation capabilities.
+This directory contains notebooks for observability, monitoring, and evaluating AI models and applications using Azure AI Foundry's evaluation capabilities.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ Before running the evaluations, you'll need:
    - Azure AI Foundry project (for cloud evaluations)
 
 2. **Environment Setup**:
-   - Create a `.env` file in this directory with the following variables:
+   - Create a `.env` file in the root directory with the following variables:
      ```
      # Azure OpenAI Configuration
      AZURE_OPENAI_ENDPOINT=https://your-openai-resource.openai.azure.com/
@@ -30,7 +30,16 @@ Before running the evaluations, you'll need:
 
 ## Notebook Contents
 
-### 1. Evaluation.ipynb
+### 1-Observability.ipynb
+
+Learn how to implement observability and monitoring for AI agents:
+
+- **Tracing**: Track LLM calls, tool executions, and token usage
+- **Application Insights**: Integrate with Azure Application Insights for centralized monitoring
+- **Agent Observability**: Monitor agent lifecycle and execution patterns
+- **Performance Metrics**: Analyze response times and resource utilization
+
+### 2-evaluation.ipynb
 
 Learn how to evaluate generative AI models using:
 
