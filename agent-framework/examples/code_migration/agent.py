@@ -224,7 +224,8 @@ def fetch_sample(
         return f"Error: Sample '{sample_name}' not found.\n\nAvailable samples (first 10): {', '.join(available)}"
 
     # Fetch content from GitHub raw URL
-    file_path = sample["file_path"]
+    # Normalize path separators to forward slashes for URLs
+    file_path = sample["file_path"].replace("\\", "/")
     raw_url = f"{GITHUB_RAW_URL}/{file_path}"
 
     try:

@@ -91,8 +91,8 @@ def scan_python_samples(repo_root: Path) -> list[dict]:
         # Generate name from filename
         name = py_file.stem
 
-        # Create relative path from repo root
-        file_path = str(py_file.relative_to(repo_root))
+        # Create relative path from repo root (use forward slashes for URLs)
+        file_path = str(py_file.relative_to(repo_root)).replace("\\", "/")
         github_url = f"{GITHUB_BASE_URL}/{file_path}"
 
         samples.append(
@@ -130,8 +130,8 @@ def scan_dotnet_samples(repo_root: Path) -> list[dict]:
         # Generate name from filename
         name = cs_file.stem
 
-        # Create relative path from repo root
-        file_path = str(cs_file.relative_to(repo_root))
+        # Create relative path from repo root (use forward slashes for URLs)
+        file_path = str(cs_file.relative_to(repo_root)).replace("\\", "/")
         github_url = f"{GITHUB_BASE_URL}/{file_path}"
 
         samples.append(
@@ -180,8 +180,8 @@ def scan_documentation(repo_root: Path, language: str) -> list[dict]:
         else:
             name = f"{category}_documentation"
 
-        # Create relative path from repo root
-        file_path = str(readme_file.relative_to(repo_root))
+        # Create relative path from repo root (use forward slashes for URLs)
+        file_path = str(readme_file.relative_to(repo_root)).replace("\\", "/")
         github_url = f"{GITHUB_BASE_URL}/{file_path}"
 
         docs.append(

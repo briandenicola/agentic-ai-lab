@@ -150,9 +150,7 @@ Follow this structured learning path to master Azure AI Foundry:
 
 | Notebook | Description |
 |----------|-------------|
-| 🔐 [Authentication](initial-setup/1-authentication.ipynb) | Azure credential setup and security |
-| ⚙️ [Environment Setup](initial-setup/2-environment_setup.ipynb) | Development environment configuration |
-| 🚀 [Quick Start](initial-setup/3-quick_start.ipynb) | First AI model interaction |
+|  [Quick Start](initial-setup/quick_start.ipynb) | First AI model interaction and Azure AI Foundry setup |
 
 ### 💬 Phase 2: Chat & RAG Fundamentals
 **Location:** `chat-rag/`
